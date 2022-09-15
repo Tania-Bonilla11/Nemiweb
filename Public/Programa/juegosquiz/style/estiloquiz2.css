@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+  --primary-color     :  #71cc49;
+}
+.card {
+  color:var(--primary-color);
+  float: left;
+  width: calc(30% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  height: 259px;
+  justify-content: center;
+   align-items: center;
+}
+.cardContainer{
+
+  margin-left: 100px;
+}
+.card p {
+  font-size: 20px;
+}
+.img{
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+     width: 90%;
+    
+  }
+  .cardContainer{
+    margin-left: 0%;
+  }
+}
+.button.dark {
+  background-color: #9BCB3C;
+  
+ 
+  color       : var(--white-color);
+}
+.button.ghost {
+ 
+  background : transparent;
+}
+
+.button.ghost:hover {
+  color      : var(--white-color);
+  background :#031c06;
+} 
+.card:hover {
+  transform: translateY(-.3%);
+  box-shadow: 0 4rem 8rem rgba(196, 102, 102, 0.2);
+}
